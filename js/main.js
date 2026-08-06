@@ -330,6 +330,9 @@
     var toggle = $("#nav-toggle");
     var links = $("#nav-links");
 
+    // Move nav-links to <body> so position:fixed escapes navbar's stacking context
+    document.body.appendChild(links);
+
     var overlay = document.createElement("div");
     overlay.className = "nav-overlay";
     document.body.appendChild(overlay);

@@ -13,8 +13,8 @@ const PORTFOLIO_DATA = {
   // 1. INFORMACIÓN PERSONAL
   // -----------------------------
   perfil: {
-    nombre: "Joaquin Sebastián Chaparro Villavicecio",                 // tu nombre completo
-    nick: "Joaquin Dev",                       // opcional, se usa en el logo
+    nombre: "Joaquin Chaparro Villavicecio",                 // tu nombre completo
+    nick: "JoaquinDev",                       // opcional, se usa en el logo
     rolDestacado: "Ingeniería de Software", // palabra que se resalta en el hero
     ubicacion: "Lima, Perú",
     disponible: true,                      // true = muestra badge "Disponible para prácticas/empleo"
