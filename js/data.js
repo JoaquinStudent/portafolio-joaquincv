@@ -18,7 +18,7 @@ const PORTFOLIO_DATA = {
     rolDestacado: "Ingeniería de Software", // palabra que se resalta en el hero
     ubicacion: "Lima, Perú",
     disponible: true,                      // true = muestra badge "Disponible para prácticas/empleo"
-    descripcion: "Estudiante de Ingeniería de Software del 6to ciclo en Universidad Tecnológica del Perú. Con conocimientos en el desarrollo de software y la tecnología de la información.",
+    descripcion: "Estudiante de Ingeniería de Software del 6to ciclo en Universidad Tecnológica del Perú. Con conocimientos en desarrollo de software y la tecnología de la información.",
     avatar: "assets/img/foto_perfil.jpg",           // reemplaza este archivo por tu foto, o deja vacío para iniciales
     email: "joaquiningsoft@gmail.com",
     linkedin: "https://linkedin.com/in/joaquin-chaparro-ingsoft/",
@@ -32,7 +32,7 @@ const PORTFOLIO_DATA = {
   // -----------------------------
   sobreMi: {
   quienSoy: "Soy Joaquín Chaparro, estudiante de Ingeniería de Software en la Universidad Tecnológica del Perú, apasionado por construir soluciones que van del prototipo a producción. Disfruto integrar APIs, diseñar interfaces limpias en React y Next.js, y resolver problemas reales con código. Me motiva ver cómo la tecnología puede simplificar procesos, ya sea en un sistema de tracking logístico o en una herramienta educativa.",
-  comoTrabajo: "Trabajo con enfoque mock-first para avanzar en paralelo con backend sin bloquearme, y me apoyo en TypeScript y buenas prácticas para mantener el código desacoplado y escalable. Aprendo construyendo: prefiero lanzar un prototipo funcional rápido y luego iterar, como hice en hackathons de 4 horas. Fuera del código, disfruto liderar talleres de tecnología con LEAD UTP y enseñar, algo que también reforcé como profesor de informática.",
+  quienSoy: "Soy un entusiasta del desarrollo de software, siempre buscando crear soluciones prácticas para problemas reales. He trabajado en el desarrollo de aplicaciones web, participando en todas las fases del proyecto: desde el diseño de la interfaz y el modelado de endpoints, hasta el despliegue en producción. Me interesa todo el proceso de desarrollo, asegurando que las aplicaciones no solo resuelvan problemas de negocio, sino que también ofrezcan una experiencia sólida y confiable al usuario.",
 },
 
   // -----------------------------
