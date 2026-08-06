@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio — Ingeniería de Software</title>
+  <meta name="description" content="Portafolio de proyectos de un estudiante de Ingeniería de Software." />
+
+  <meta property="og:title" content="Portafolio — Joaquin Dev" />
+  <meta property="og:description" content="Estudiante de Ingeniería de Software. Desarrollo web y productos que resuelven problemas reales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/foto_perfil.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#0b0e11" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f7f8fb" media="(prefers-color-scheme: light)" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<script>var t=localStorage.getItem('theme');if(t==='light'||(t===null&&matchMedia('(prefers-color-scheme:light)').matches))document.body.classList.add('light')</script>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#inicio" class="brand">
+        <span class="path-name">~/</span><span class="brand-nick">portafolio</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio" class="active"><span class="prompt">></span>inicio</a></li>
+        <li><a href="#proyectos"><span class="prompt">></span>proyectos</a></li>
+        <li><a href="#sobre-mi"><span class="prompt">></span>sobre-mi</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar idioma">EN</button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">☀︎</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="inicio" class="section" style="border-top:none; padding-top: 0;">
+      <div class="container hero">
+        <div class="hero-copy">
+          <span class="badge" id="hero-badge" style="display:none">
+            <span class="dot"></span>
+            <span id="hero-badge-text"></span>
+          </span>
+
+          <div class="avatar" id="hero-avatar"></div>
+
+          <h1><span data-t="greeting">Hola, soy </span><span id="hero-nombre"></span><span class="cursor"></span></h1>
+          <p id="hero-desc"></p>
+
+          <div class="btn-row">
+            <a href="#proyectos" class="btn btn-primary" data-t="viewProjects">Ver proyectos</a>
+            <a href="#" id="hero-email" class="btn btn-ghost"><img src="assets/icons/email.svg" alt="" width="16" height="16"> <span data-t="contact">Contáctame</span></a>
+            <a href="#" id="hero-whatsapp" class="btn btn-ghost" target="_blank" rel="noopener" style="display:none"><img src="assets/icons/whatsapp.svg" alt="" width="16" height="16"> WhatsApp</a>
+            <a href="#" id="hero-linkedin" class="btn btn-ghost" target="_blank" rel="noopener"><img src="assets/icons/linkedin.svg" alt="" width="16" height="16"> LinkedIn</a>
+            <a href="#" id="hero-github" class="btn btn-ghost" target="_blank" rel="noopener" style="display:none"><img src="assets/icons/github.svg" alt="" width="16" height="16"> GitHub</a>
+            <a href="#" id="hero-cv" class="btn btn-ghost" target="_blank" rel="noopener" style="display:none" data-t="downloadCV">↓ CV</a>
+          </div>
+        </div>
+
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="tdot red"></span>
+            <span class="tdot yellow"></span>
+            <span class="tdot green"></span>
+            <span class="tfile">bash — 80x24</span>
+          </div>
+          <div class="terminal-body" id="terminal-body"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <span class="eyebrow" data-t="eyebrowProjects">proyectos</span>
+        <h2 class="section-title" data-t="titleProjects">Cosas que he construido</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+        <button class="btn btn-ghost btn-show-more" id="btn-show-more" style="display:none" data-t="showMore">Ver más proyectos</button>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <span class="eyebrow" data-t="eyebrowAbout">sobre-mi</span>
+        <h2 class="section-title" data-t="titleAbout">Quién está detrás del código</h2>
+
+        <div class="about-grid">
+          <div>
+            <div class="about-block">
+              <h4><span class="prompt">$</span> cat <span data-t="cmdWho">quien-soy</span>.md</h4>
+              <p id="about-quien-soy"></p>
+            </div>
+            <div class="about-block">
+              <h4><span class="prompt">$</span> cat <span data-t="cmdWork">como-trabajo</span>.md</h4>
+              <p id="about-como-trabajo"></p>
+            </div>
+          </div>
+
+          <div class="skills-panel" id="skills-panel"></div>
+        </div>
+
+        <div class="competencias-grid" id="competencias-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <p class="footer-brand">~/<span class="brand-nick">portafolio</span></p>
+          <p class="footer-tagline" id="footer-tagline"></p>
+        </div>
+        <div class="footer-links">
+          <h6 data-t="connect">Conéctate</h6>
+          <ul>
+            <li><a href="#" id="footer-github" target="_blank" rel="noopener"><img src="assets/icons/github.svg" alt="" width="16" height="16"> GitHub</a></li>
+            <li><a href="#" id="footer-linkedin" target="_blank" rel="noopener"><img src="assets/icons/linkedin.svg" alt="" width="16" height="16"> LinkedIn</a></li>
+            <li><a href="#" id="footer-whatsapp" target="_blank" rel="noopener"><img src="assets/icons/whatsapp.svg" alt="" width="16" height="16"> WhatsApp</a></li>
+            <li><a href="#" id="footer-email"><img src="assets/icons/email.svg" alt="" width="16" height="16"> Email</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h6 data-t="navFooter">Navegación</h6>
+          <ul>
+            <li><a href="#inicio" data-t="navHome">Inicio</a></li>
+            <li><a href="#proyectos" data-t="navProjects">Proyectos</a></li>
+            <li><a href="#sobre-mi" data-t="navAbout">Sobre mí</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="footer-year"></span> — <span data-t="madeWith">Hecho con HTML, CSS y JS.</span></span>
+        <a href="#inicio" class="back-to-top" aria-label="Volver arriba">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
