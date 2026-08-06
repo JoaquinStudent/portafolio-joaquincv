@@ -31,8 +31,8 @@ const PORTFOLIO_DATA = {
   // 2. SOBRE MÍ
   // -----------------------------
   sobreMi: {
-  quienSoy: "Soy Joaquín Chaparro, estudiante de Ingeniería de Software en la Universidad Tecnológica del Perú, apasionado por construir soluciones que van del prototipo a producción. Disfruto integrar APIs, diseñar interfaces limpias en React y Next.js, y resolver problemas reales con código. Me motiva ver cómo la tecnología puede simplificar procesos, ya sea en un sistema de tracking logístico o en una herramienta educativa.",
   quienSoy: "Soy un entusiasta del desarrollo de software, siempre buscando crear soluciones prácticas para problemas reales. He trabajado en el desarrollo de aplicaciones web, participando en todas las fases del proyecto: desde el diseño de la interfaz y el modelado de endpoints, hasta el despliegue en producción. Me interesa todo el proceso de desarrollo, asegurando que las aplicaciones no solo resuelvan problemas de negocio, sino que también ofrezcan una experiencia sólida y confiable al usuario.",
+  comoTrabajo: "Valoro el trabajo en equipo y creo que la comunicación y el compromiso son esenciales para el éxito. Me gusta colaborar con otros desarrolladores y recibir retroalimentación para mejorar continuamente. En mi tiempo libre, disfruto escuchando música y explorando nuevas tecnologías a través de videos y tutoriales.",
 },
 
   // -----------------------------
