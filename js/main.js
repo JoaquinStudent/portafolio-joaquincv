@@ -329,9 +329,35 @@
   function setupNav() {
     var toggle = $("#nav-toggle");
     var links = $("#nav-links");
-    toggle.addEventListener("click", function () { links.classList.toggle("open"); });
+
+    var overlay = document.createElement("div");
+    overlay.className = "nav-overlay";
+    document.body.appendChild(overlay);
+
+    var closeBtn = document.createElement("button");
+    closeBtn.className = "nav-close";
+    closeBtn.setAttribute("aria-label", "Cerrar menú");
+    closeBtn.textContent = "✕";
+    links.prepend(closeBtn);
+
+    function openMenu() {
+      links.classList.add("open");
+      overlay.classList.add("active");
+      document.body.classList.add("menu-open");
+    }
+    function closeMenu() {
+      links.classList.remove("open");
+      overlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    }
+
+    toggle.addEventListener("click", function () {
+      links.classList.contains("open") ? closeMenu() : openMenu();
+    });
+    closeBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
     $$("#nav-links a").forEach(function (a) {
-      a.addEventListener("click", function () { links.classList.remove("open"); });
+      a.addEventListener("click", closeMenu);
     });
 
     var sections = $$("main section[id]");

@@ -17,7 +17,7 @@ const PORTFOLIO_DATA = {
     nick: "Joaquin Dev",                       // opcional, se usa en el logo
     rolDestacado: "Ingeniería de Software", // palabra que se resalta en el hero
     ubicacion: "Lima, Perú",
-    disponible: false,                      // true = muestra badge "Disponible para prácticas/empleo"
+    disponible: true,                      // true = muestra badge "Disponible para prácticas/empleo"
     descripcion: "Estudiante de Ingeniería de Software del 6to ciclo en Universidad Tecnológica del Perú. Con conocimientos en el desarrollo de software y la tecnología de la información.",
     avatar: "assets/img/foto_perfil.jpg",           // reemplaza este archivo por tu foto, o deja vacío para iniciales
     email: "joaquiningsoft@gmail.com",
